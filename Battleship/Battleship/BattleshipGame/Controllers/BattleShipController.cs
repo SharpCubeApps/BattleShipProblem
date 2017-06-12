@@ -60,8 +60,8 @@ namespace Battleship.BattleshipGame.Controllers
             playerTwoGameBoard.PlaceShipsOnBoard(playerTwoShips);
 
             //Take moves of each player as input from user
-            string[] playerOneMoves = "A1 B2 B2 B3".Split(' '); //_inputService.GetUserInput()
-            string[] playerTwoMoves = "A1 B2 B3 A1 D1 E1 D4 D4 D5 D5".Split(' ' ); //_inputService.GetUserInput()
+            string[] playerOneMoves = _inputService.GetUserInput().Split(' ');
+            string[] playerTwoMoves = _inputService.GetUserInput().Split(' ' );
 
             //Create players based on inupts
             IPlayer playerOne = new Player("Player 1", playerOneGameBoard, playerOneShips);
