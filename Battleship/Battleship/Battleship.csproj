@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleshipGame\Common\Attributes\MissileResilienceAttribute.cs" />
     <Compile Include="BattleshipGame\Common\Enums\ShipTypes.cs" />
+    <Compile Include="BattleshipGame\Common\Extensions\ShipTypesEntensionMethod.cs" />
     <Compile Include="BattleshipGame\Models\Board\BoardPoint.cs" />
     <Compile Include="BattleshipGame\Models\Board\IBattleBoard.cs" />
-    <Compile Include="BattleshipGame\Common\Constants\Constants.cs" />
+    <Compile Include="BattleshipGame\Common\Consts\Constants.cs" />
     <Compile Include="BattleshipGame\Common\Enums\BoardPointStatus.cs" />
     <Compile Include="BattleshipGame\Models\Board\BattleBoard.cs" />
     <Compile Include="BattleshipGame\Common\GameComponents\BoardSize.cs" />

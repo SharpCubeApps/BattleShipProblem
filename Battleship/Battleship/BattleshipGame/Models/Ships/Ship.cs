@@ -1,6 +1,7 @@
 ﻿using System;
-using Battleship.BattleshipGame.Common.Constants;
+using Battleship.BattleshipGame.Common.Attributes;
 using Battleship.BattleshipGame.Common.Enums;
+using Battleship.BattleshipGame.Common.Extensions;
 
 namespace Battleship.BattleshipGame.Models.Ships
 {
@@ -34,7 +35,7 @@ namespace Battleship.BattleshipGame.Models.Ships
                 _shipMissilePoints[row] = new int[Width];
                 for (int colIndex = 0; colIndex < Width; colIndex++)
                 {
-                    _shipMissilePoints[row][colIndex] = ShipType == ShipTypes.Q ? Constants.ShipResiliency_TypeQ : Constants.ShipResiliency_TypeP;
+                    _shipMissilePoints[row][colIndex] = ShipType.GetAttribute<MissileResilienceAttribute>().Value;
                 }
             }
         }
