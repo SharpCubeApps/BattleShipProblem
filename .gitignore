@@ -1,2 +1,5 @@
 
-Battleship/.vs/Battleship/v14/.suo
+*.suo
+bin
+obj
+packages
